@@ -16,3 +16,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: gh repo sync Mellbrother/daydule-backend
+        env:
+          GH_TOKEN: ${{ secrets.ACCESS_TOKEN }}
