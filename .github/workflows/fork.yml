@@ -13,13 +13,6 @@ on:
 
 jobs:
   sync:
-
     runs-on: ubuntu-latest
-
     steps:
-      - uses: tgymnich/fork-sync@v1.8
-        with:
-          owner: daydule
-          repo: backend
-          base: develop
-          head: develop
+      - run: gh repo sync Mellbrother/daydule-backend
